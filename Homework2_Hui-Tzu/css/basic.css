@@ -1,0 +1,38 @@
+/*所有標籤BOX MODEL 使用 BORDER BOX*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*排版用的標籤 RESET margin與padding*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+body,
+div,
+header,
+footer,
+article,
+section,
+nav,
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+}
+
+.container-fluid {
+    width: 80%;
+    margin: 0 auto;
+    /*    讓他包含浮動原件整個區塊*/
+}
