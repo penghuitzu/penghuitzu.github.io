@@ -1,153 +1,519 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>HuiTzu's Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!--導覽列開始-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- 導覽列 RWD選單圖示與品牌連結 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">觸發縮放</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""> MOBIRISE</a>
+            </div>
+
+            <!-- 小螢幕時要被收起的元素 放置於 navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- 拉到右邊的導覽列清單 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">WHAT IS IT</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">FORUMS</a></li>
+                    <li><a class="btn btn-primary btn-lg" href="#" role="button">DOWNLOAD</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--導覽列結束-->
+
+
+
+    <!--全版面大型看板開始-->
     <div class="jumbotron">
-        <img src="images/huitzu_kv.jpg" alt="huitzu_kv" width="1920">
-    </div>
-
-    <!--Portfolio區塊嘗試emmet寫法: .portfolio>.title>h1{PORTFOLIO}^+(.thumbnail>h2>lorem3^+p>lorem8)*4-->
-    <div class="portfolio">
-        <div class="title">
-            <h1>PORTFOLIO</h1>
-        </div>
-        <div class="thumbnail">
-            <img src="images/work_01.jpg" alt="work_01">
-            <h2>Book Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="thumbnail">
-            <img src="images/work_02.jpg" alt="work_02">
-            <h2>Font Design</h2>
-            <p>Ducimus illum architecto, eius tempore sed placeat necessitatibus?</p>
-        </div>
-        <div class="thumbnail">
-            <img src="images/work_03.jpg" alt="work_03">
-            <h2>Illustration</h2>
-            <p>Eligendi doloribus, illum vitae ad facilis nesciunt explicabo?</p>
-        </div>
-        <div class="thumbnail">
-            <img src="images/work_04.jpg" alt="work_04">
-            <h2>Graphic Design</h2>
-            <p>Eligendi doloribus, illum vitae ad facilis nesciunt explicabo?</p>
+        <div class="container">
+            <h1 id="slogan">MOBIRISE <br> WEBSITE BUILDER</h1>
+            <h2 style="font-style: italic ">Create awesome mobile-friendly websites. No coding and free.</h2>
+            <a class="btn btn-primary btn-lg btn-1" href="#" role="button"><span class="glyphicon glyphicon-th-large"></span>DOWNLOAD FOR WINDOWS</a>
+            <a class="btn btn-primary btn-lg btn-2" href="#" role="button"><span class="glyphicon glyphicon-apple"></span>DOWNLOAD FOR MAC</a>
         </div>
     </div>
+    <!--全版面大型看板結尾-->
 
+    <!--Icon+文案版 開始-->
+    <section>
+        <div class="container width" id="width100">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/1.png" alt="">
+                        <h3>WHAT IS MOBIRISE?</h3>
+                        <p>Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.</p>
+                    </div>
 
-    <!--about區塊嘗試emmet寫法:.about>.title>h1{ABOUT ME}^+(.iofo>h2>lorem3)*3-->
-    <div class="about">
-        <div class="title">
-            <h1>ABOUT ME</h1>
-        </div>
-        <div class="iofo">
-            <h2>Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ipsam aperiam doloribus hic velit deserunt asperiores architecto vitae similique quas accusantium ea nemo cupiditate atque quod omnis, dolore a aspernatur.</p>
-        </div>
-        <div class="iofo">
-            <h2>Education</h2>
-            <ul>
-                <li>2010-2013 National Chiao Tung University, Visual Communication Design, Institute of Applied Arts, Master of Fine Arts (MFA) </li>
-                <li>2005-2009 National Taipei University of Education, Department of Art and Design, Bachelor of Fine Arts (BFA)</li>
-                <li>2002-2005 National Hsinchu Girls' Senior High School
-                </li>
-            </ul>
-        </div>
-        <div class="iofo">
-            <h2>Info</h2>
-            <ul>
-                <li>Job: Senior Designer for ASUS</li>
-                <li>Email:penghuitzu@gmail.com</li>
-                <li>Website:www.xxxxxxxxxx.com</li>
-            </ul>
-
-        </div>
-    </div>
-
-    <!--Experience區塊嘗試emmet寫法:.Experience>.title>h1{EXPERIENCE}^+.work>h2^+.skill>h2-->
-    <div class="Experience">
-        <div class="title">
-            <h1>EXPERIENCE</h1>
-        </div>
-        <div class="work">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>2015-2016</li>
-                <li>2014-2015</li>
-                <li>2013-2014</li>
-            </ul>
-        </div>
-        <div class="skill">
-            <h2>Skills</h2>
-            <div class="infographic">
-                <h3>skill_01</h3> <img src="images/infographic_01.png" alt="skill_01">
-            </div>
-            <div class="infographic">
-                <h3>skill_02</h3> <img src="images/infographic_01.png" alt="skill_02">
-            </div>
-            <div class="infographic">
-                <h3>skill_03</h3> <img src="images/infographic_01.png" alt="skill_03">
-            </div>
-            <div class="infographic">
-                <h3>skill_04</h3> <img src="images/infographic_01.png" alt="skill_04">
-            </div>
-            <div class="infographic">
-                <h3>skill_05</h3> <img src="images/infographic_01.png" alt="skill_05">
-            </div>
-            <div class="infographic">
-                <h3>skill_06</h3> <img src="images/infographic_01.png" alt="skill_06">
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/waiter.png" alt="">
+                        <h3>IS IT GOOD FOR ME?</h3>
+                        <p>Mobirise is perfect for non-techies who are not familiar with the intricacies of web development and for designers who prefer to work as visually as possible, without fighting with code. Also great for pro-coders for fast prototyping and small customers' projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/3.png" alt="">
+                        <h3>WHY MOBIRISE?</h3>
+                        <p>Key differences from traditional builders: * Minimalistic, extremely easy-to-use interface * Mobile-friendliness, latest website blocks and techniques "out-the-box" * Free for commercial and non-profit use</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <!--Icon+文案版 結尾-->
 
-    </div>
+    <!--  按鈕圖片開始-->
+    <section class="pic-btn">
+        <div class="container section-img">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>HOW MOBIRISE WORKS</h1>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="thumbnail">
+                        <img src="./images/fe4a5cbf.jpg" alt="">
+                        <div class="img-mask"></div>
+                        <span class="text-bottom">Drag blocks to your page</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="thumbnail">
+                        <img src="./images/fe4a5cbf.jpg" alt="">
+                        <div class="img-mask"></div>
+                        <span class="text-bottom">Edit and style content inline</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="thumbnail">
+                        <img src="./images/fe4a5cbf.jpg" alt="">
+                        <div class="img-mask"></div>
+                        <span class="text-bottom">Set block parameters</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="thumbnail">
+                        <img src="./images/fe4a5cbf.jpg" alt="">
+                        <div class="img-mask"></div>
+                        <span class="text-bottom">Manage sites and publish</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  按鈕圖片結尾-->
 
-    <!--Service區塊嘗試emmet寫法: .service>.title>h1{Service}^+(.icon>img[src=images][alt=icon$]+h2{name$})*8-->
-    <div class="service">
-        <div class="title">
-            <h1>Service</h1>
+    <!-- DROP-DEAD EASY WEBSITE MAKER start -->
+    <section class="bg-color">
+        <div class="container text-left ">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="" class="thumbnail ">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tq7p44IA-1U" frameborder="0" allowfullscreen></iframe>
+                    </a>
+                </div>
+                <div class="col-md-6 padding-left">
+                    <h1 id="text-left">DROP-DEAD EASY WEBSITE MAKER</h1>
+                    <p>Cut down the development time with drag-and-drop website builder. Drop the blocks you like into your page, edit content inline and publish - no technical skills required.</p>
+                    <!--按鈕群組開始-->
+                    <a class="btn btn-primary btn-lg btn-3" href="#" role="button">FOR WINDOWS</a>
+                    <a class="btn btn-primary btn-lg btn-4" href="#" role="button">FOR MAC</a>
+                    <!--按鈕群組結尾-->
+                </div>
+            </div>
         </div>
-        <div class="icon">
-            <img src="images/icon_01.png" alt="icon1">
-            <h2>name1</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_02.png" alt="icon2">
-            <h2>name2</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_03.png" alt="icon3">
-            <h2>name3</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_04.png" alt="icon4">
-            <h2>name4</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_01.png" alt="icon5">
-            <h2>name5</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_02.png" alt="icon6">
-            <h2>name6</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_03.png" alt="icon7">
-            <h2>name7</h2>
-        </div>
-        <div class="icon">
-            <img src="images/icon_04.png" alt="icon8">
-            <h2>name8</h2>
-        </div>
-    </div>
+    </section>
+    <!-- DROP-DEAD EASY WEBSITE MAKER end -->
 
-    <h1>Sketch</h1>
-    <img src="images/cv_draft.jpg" alt="">
-    <h1>Reviewer</h1>
-    <p>黃薇臻</p>
+    <!--PLEASE SHARE IT!. start-->
+    <section>
+        <div class="container share">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>PLEASE SHARE IT!.</h1>
+                    <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PLEASE SHARE IT!. end-->
+
+    <!--BEAUTIFUL MOBILE WEBSITES start-->
+    <section class="bg-img">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 text-right">
+                    <h1>BEAUTIFUL<br>MOBILE<br>WEBSITES</h1>
+                    <p>Develop fully responsive, mobile-ready websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.</p>
+                    <a class="btn btn-primary btn-lg btn-3" href="#" role="button">FOR WINDOWS</a>
+                    <a class="btn btn-primary btn-lg btn-5" href="#" role="button">FOR MAC</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" class="thumbnail">
+                        <img src="./images/photo-1423784346385-c1d4dac9893a.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BEAUTIFUL MOBILE WEBSITES end-->
+
+
+
+    <section class="hight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>BOOST YOUR RANKING</h3>
+                        <p>Sites made with Mobirise are 100% mobile-friendly according the latest Google Test and Google loves those websites (officially)!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>BOOTSTRAP BUILDER</h3>
+                        <p>Mobirise themes are based on Bootstrap 3 and Bootstrap 4 - most powerful mobile first framework. Now, even if you're not code-savvy, you can be a part of an exciting growing bootstrap community.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>TRENDY WEBSITE BLOCKS</h3>
+                        <p>Choose from the large selection of latest pre-made blocks - full-screen intro, bootstrap carousel, content slider, responsive image gallery with lightbox, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>HOST ANYWHERE</h3>
+                        <p>Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.</p>
+                    </div>
+                </div>
+                <!--=================================================================-->
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>IMAGE/CONTENT SLIDER</h3>
+                        <p>Create a responsive, touch-swipe slideshow with Mobirise bootstrap slider. Add images, text, buttons to slides, set autoplay, full-screen, full-width or boxed layout.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>CONTACT FORMS</h3>
+                        <p>Easily add subscribe and contact forms without any server-side integration. Just link your email to form and get submissions instantly.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>IMAGE GALLERY</h3>
+                        <p>Showcase your pictures in masonry image gallery with mobile-optimized responsive grid. Integrated lightbox expands the thumbnails to the full-browser image slider.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>MOBILE MENU</h3>
+                        <p>Mobirise horizontal navigation menu collapses on devices to a single-icon mobile menu, also know as "hamburger menu", for a flawless mobile experience for all visitors.</p>
+                    </div>
+                </div>
+                <!--=================================================================-->
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>GOOGLE MAPS</h3>
+                        <p>Help customers find their way to your company location - just drop a Google Map block and type your address.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>SOCIAL BUTTONS</h3>
+                        <p>Grow your audience and improve social media engagement with "Share This Page" and "Follow Us" blocks. Social share counter displays automatically, without any tweaking.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>FONTS AND ICONS</h3>
+                        <p>Choose from the list of most popular Google Fonts and retina-ready icons to design a unique look & feel with some typography flair.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/photo-1473886041811-de35bd962210.jpg" alt="">
+                        <h3>VIDEO BACKGROUND</h3>
+                        <p>Video can be a great addition to a website. Bring your website to life and create an instant connection with an ambient background video.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WHAT EXPERTS SAY ABOUT MOBIRISE start-->
+
+    <section class="expert-say">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>WHAT EXPERTS SAY ABOUT MOBIRISE</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"If a website building novice asks me to point them in the direction of a totally free website builder, Mobirise will now be high on my list of recommendations. I'm that impressed."</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Kaya Ismail</h3>
+                            <h4>CMS Critic Review</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>" ..which is a diplomatic way of saying “Hallelujah!” for being able to build websites that should require coding without any coding skills."</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Roger Hollings</h3>
+                            <h4>Mobirise Review on KillerStartups</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"Mobirise Website Builder is a refresher on the two solutions for creating websites that load as well on mobile devices as they do on desktops."</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Alex Ivanovs</h3>
+                            <h4>HuffingtonPost Review</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"As a Category Pioneer, Mobirise is making the Bootstrap 3 accessible to graphic professionals, hobbyists and web designers without their having to master the code base"</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Tom Green</h3>
+
+
+                            <h4>Mobirise Review on About.com</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"For me, Mobirise seemed like a Lego project made with a collection or building blocks... Produce sites that shine in a mobile world!"</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Ric Manning</h3>
+                            <h4>GizmoEditor Website Builder Review</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"Want a responsive, mobile, HTML, CSS, and JavaScript driven site without breaking a sweat? For free? Voila! (You're welcome.)"</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Mark Gibbs</h3>
+                            <h4>CMS Critic Review</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"Mobirise Website Builder is a refresher on the two solutions for creating websites that load as well on mobile devices as they do on desktops."</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Alex Ivanovs</h3>
+                            <h4>HuffingtonPost Review</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"As a Category Pioneer, Mobirise is making the Bootstrap 3 accessible to graphic professionals, hobbyists and web designers without their having to master the code base"</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Tom Green</h3>
+                            <h4>Mobirise Review on About.com</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="saying">
+                        <p>"For me, Mobirise seemed like a Lego project made with a collection or building blocks... Produce sites that shine in a mobile world!"</p>
+                        <div class="expert">
+                            <img src="./images/kaya-ismail-160x160-87.png" alt="">
+                            <h3>Ric Manning</h3>
+                            <h4>GizmoEditor Website Builder Review</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--WHAT EXPERTS SAY ABOUT MOBIRISE end-->
+
+    <!--    dialogue對話框開始-->
+    <section class="user-say">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>WHAT OUR FANTASTIC USERS SAY</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>“its really very amazing app that makes me finish html page in 3 minutes (that's usually takes more than 1 hours at least from me if i did it from scratch). i hope to have very big library and plugins for this APP thanks again for your nice application”</p>
+                        <div class="triangle"></div>
+                        <h3>Abanoub S.</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>“First of all hands off to you guys for your effort and nice, super tool. Good work mobirise team. We are expecting the new version soon with advance functionality with full bootstrap theme design. Great effort and super UI experience with easy drag & drop with no time design bootstrap builder in present web design world.”</p>
+                        <div class="triangle"></div>
+                        <h3>Suffian A.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>“At first view, looks like a nice innovative tool, i like the great focus and time that was given to the responsive design, i also like the simple and clear drag and drop features. Give me more control over the object's properties and ill be using this tool for more serious projects. Regards.”</p>
+                        <div class="triangle"></div>
+                        <h3>Jhollman C.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"I've been away from web development for a while... but couldn't resist to download and take a look at this. I am amazed. I just wanted to complement you on a beautiful piece of software. I expect there will be lots of web developers will curse it... because it truly hands over the power to the user! I think it's fabulous. Well done. "</p>
+                        <div class="triangle"></div>
+                        <h3>Stewart</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"Don't have words to say.... it's just awesome I am a professional Web designer for past 20 yrs used scrap Web designing techniques after those days drumbeat software was killed by Macromedia, now I remember those wonderful days... This enables me to create websites in few minutes. Thanks mobirise builder team. Keep going."</p>
+                        <div class="triangle"></div>
+                        <h3>Ravindra D.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"Love it! Good timing, too. Have just been researching for… * Responsive site builder (preferably Bootstrap) * Which can publish a site to where I want it …but I guess you knew that ;-) Mobirise looks like the thing! Nice and simple to use. And feels solid and reliable. Count me in if you need any testers."</p>
+                        <div class="triangle"></div>
+                        <h3>Tanya K.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"I just installed this web design software. You caught me at a good time as I am redoing my home page to make it better for mobile at my website. I previously used a template based on skel which I was told was more light weight than Bootstrap but I find it to be less functional than it should be so I am trying to develop a Bootstrap version now."</p>
+                        <div class="triangle"></div>
+                        <h3>Kevin O.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"What a great start! My creative graphic designers mind is already thinking of ways around the limited design options to create the unique looks I want for my clients using the background image option. I'm excited to see where you go with this new project."</p>
+                        <div class="triangle"></div>
+                        <h3>Julie C.</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dialogue">
+                        <p>"Loving the additions to the new version of Mobirise web dev app. It's a great, cleanly designed, user-friendly, non-bloated design program. So easy and a pleasure to use. I'm with you all the way with this wonderful project. Keep up the great work on this easy website builder."</p>
+                        <div class="triangle"></div>
+                        <h3>David F.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    dialogue對話框結束-->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/logo.png" alt="">
+                    <p>Please send us your ideas, bug reports, suggestions! Any feedback would be greatly appreciated. Don't forget to add the Mobirise and OS versions you use. Help</p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-file"></span><a href="#">support@mobirise.com</a></li>
+                        <li><span class="glyphicon glyphicon-map-marker"></span><a href="#">Eindhoven, 5657 DB, Netherlands</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Creador de sitios web</li>
+                        <li>Creare un sito gratis</li>
+                        <li>Créer un site internet</li>
+                        <li>Kostenlose Homepage erstellen</li>
+                        <li>Mobiele Website Bouwer</li>
+                        <li>Lage hjemmeside gratis</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Construtor de Sites</li>
+                        <li>Конструктор мобильных сайтов</li>
+                        <li>ホームページ作成</li>
+                        <li>Lav din egen hjemmeside</li>
+                        <li>Kotisivukone</li>
+                        <li>Skapa hemsida</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

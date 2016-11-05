@@ -1,0 +1,146 @@
+/*
+
+.pic {
+    background: url(../images/iphone-6s.jpg) no-repeat;
+    height: 1024px;
+    padding-b: 60px;
+}
+*/
+
+#left1 {
+    border-radius: 8px;
+    width: 2px;
+    height: 30px;
+    border: 6px solid #f7d2d1;
+    position: absolute;
+    left: -11px;
+    top: 95px;
+}
+
+#left2 {
+    border-radius: 8px;
+    width: 2px;
+    height: 60px;
+    border: 6px solid #f7d2d1;
+    position: absolute;
+    left: -11px;
+    top: 158px;
+}
+
+#left3 {
+    border-radius: 8px;
+    width: 2px;
+    height: 60px;
+    border: 5px solid #f7d2d1;
+    position: absolute;
+    left: -11px;
+    top: 229px;
+}
+
+#right1 {
+    border-radius: 8px;
+    width: 4px;
+    height: 60px;
+    border: 6px solid #f7d2d1;
+    position: absolute;
+    left: 364px;
+    top: 160px;
+}
+
+
+/*天線 begin*/
+
+.iphone {
+    border: 7px solid #f7d2d1;
+    width: 376px;
+    height: 780px;
+    border-radius: 57px;
+    position: absolute;
+    top: 77px;
+    left: 26px;
+}
+
+#up {
+    width: 378px;
+    border-top: 12px solid #fafafa;
+    position: absolute;
+    top: 52px;
+    left: -8px;
+}
+
+#down {
+    width: 378px;
+    border-top: 12px solid #fafafa;
+    position: absolute;
+    top: 700px;
+    left: -8px;
+}
+
+
+/*天線 end*/
+
+
+/*screen begin*/
+
+.panel {
+    width: 362px;
+    height: 767px;
+    border-radius: 54px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.screen {
+    border: 3px solid #353638;
+    border-radius: 2px;
+    width: 336px;
+    height: 594px;
+    position: absolute;
+    top: 88px;
+    left: 13px;
+    background: url(../images/kv.jpg);
+}
+
+.camera {
+    background-color: black;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 38px;
+    left: 115px;
+}
+
+.laser {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    left: 176px;
+}
+
+.sound {
+    background-color: black;
+    border-radius: 40px;
+    width: 65px;
+    height: 6px;
+    position: absolute;
+    top: 43px;
+    left: 150px;
+}
+
+.touchID {
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    border: 5px solid #fad7d6;
+    position: absolute;
+    top: 694px;
+    left: 150px
+}
+
+footer {
+    clear: left;
+}
