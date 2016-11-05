@@ -354,10 +354,7 @@ h3 {
 }
 
 .expert-say {
-    /*    background-color: #f0eee4;*/
-    background-image: url(../images/bg.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #f0eee4;
 }
 
 .expert-say .thumbnail {
