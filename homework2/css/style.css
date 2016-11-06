@@ -338,13 +338,25 @@ h3 {
 
 /*BEAUTIFUL MOBILE WEBSITES end*/
 
+
+/*thumbnail start*/
+
 .hight .thumbnail {
-    height: 400px;
+    /*    height: 400px;*/
+    margin-bottom: 50px;
+}
+
+.hight .col-md-3:nth-child(4n+1) {
+    clear: left;
 }
 
 .hight .container {
+    text-align: center;
     width: 100%;
 }
+
+
+/*thumbnail end*/
 
 
 /*WHAT EXPERTS SAY ABOUT MOBIRISE start*/
